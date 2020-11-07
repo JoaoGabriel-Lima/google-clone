@@ -1,0 +1,86 @@
+*{
+    outline: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+header img, header p{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+header p:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+header img{
+    cursor: pointer;
+}
+
+.grid-icon{
+    width: 16px;
+}
+
+main{
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.search-bar{
+    display: flex;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 30px;
+}
+
+.search-bar input{
+    border: none;
+    font-size: 20px;
+    width: 450px;
+    height: 30px;
+}
+
+.search-bar img{
+    width: 16px;
+}
+
+.search-bar .search-icon{
+    margin-right: 10px;
+}
+
+.search-bar .keyboard-icon{
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.buttons button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
