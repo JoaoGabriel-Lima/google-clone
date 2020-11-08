@@ -1,2 +1,2 @@
 # Google UI Clone
-Access the site on: https://torieloreginal.github.io/google-clone/
+https://torieloreginal.github.io/google-clone/
