@@ -40,6 +40,11 @@ main{
     justify-content: center;
 }
 
+main span:hover{
+    cursor: pointer;
+    border-bottom: 1px solid blue;
+}
+
 .logo{
     margin-bottom: 20px;
 }
@@ -64,6 +69,10 @@ main{
 
 .search-bar img{
     width: 16px;
+}
+
+.search-bar .keyboard-icon:hover{
+    cursor: pointer;
 }
 
 .search-bar .search-icon{
