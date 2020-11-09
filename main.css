@@ -97,3 +97,15 @@ main span:hover{
 .buttons button:hover{
     cursor: pointer;
 }
+
+@media(max-width: 550px){
+    .logo{
+        width: 200px;
+    }
+    .search-bar{
+        width: 300px;
+    }
+    .aviable-txt{
+        font-size: 12px;
+    }
+}
