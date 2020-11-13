@@ -17,16 +17,36 @@
 
     <main>
         <img class="logo" src="./assets/google_logo.png" alt="Google">
-        <div class="search-bar">
-            <img class="search-icon" src="./assets/search_icon.png" alt="Search">
-            <input type="text">
-            <img class="keyboard-icon" src="./assets/keyboard_icon.png" alt="Virtual keyboard">
-        </div>
-        <div class="buttons">
-            <button>Pesquisa Google</button>
-            <button>Estou com sorte</button>
-        </div>
+        <form name="form1" id="form1" method="post" onsubmit="return doSearch()">
+            <div class="search-bar">
+                <img class="search-icon" src="./assets/search_icon.png" alt="Search">
+                <input type="text" id="search-input" onsubmit="doSearch()">
+                <img class="keyboard-icon" src="./assets/keyboard_icon.png" alt="Virtual keyboard">
+            </div>
+        </form>
+            <div class="buttons">
+                <button onclick="doSearch()">Pesquisa Google</button>
+                <button onclick="doodles()">Estou com sorte</button>
+            </div>
+        
         <p class="aviable-txt" style="margin-top: 20px;">Disponibilizado pelo Google em: <span style="color: blue;">English</span></p>
     </main>
 </body>
 </html>
+<script>
+    
+    function doSearch() {
+        let txt = document.getElementById("search-input").value;
+        if (txt == "") {
+            location.reload
+            return false;
+        } else {
+            location.href = `https://www.google.com/search?q=${txt}&oq=${txt}`
+            return false;
+        }
+    }
+
+    function doodles() {
+        location.href="https://www.google.com/doodles/"
+    }
+</script>

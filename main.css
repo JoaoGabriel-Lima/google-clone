@@ -91,6 +91,7 @@ main span:hover{
 
 .search-bar .search-icon{
     margin-left: 2%;
+    margin-right: 10px;
 }
 
 .search-bar .keyboard-icon{
@@ -121,9 +122,13 @@ main span:hover{
     .logo{
         width: 200px;
     }
-    .search-bar{
+    #form1{
         width: 80%;
 
+    }
+
+    .search-bar, #search-input {
+        max-width: 93.5%;
     }
     .aviable-txt{
         font-size: 12px;
